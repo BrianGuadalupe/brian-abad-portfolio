@@ -1,0 +1,22 @@
+# Dependencias y build
+node_modules/
+dist/
+.vercel/
+
+# Entornos locales (no subir claves)
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# SO / IDE
+.DS_Store
+Thumbs.db
+.idea/
+# Si no quieres versionar ajustes de VS Code, descomenta:
+# .vscode/
