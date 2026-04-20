@@ -58,7 +58,7 @@ const App = () => {
     {
       id: 'contact',
       title: 'Contact',
-      content: "If you're building something in AI automation and want to move fast \u2014 or thinking about how to bring AI into your organization for real \u2014 let's talk.\n\n<a href=\"mailto:brianabadguadalupe@gmail.com\" class=\"underline hover:text-blue-500\">brianabadguadalupe@gmail.com</a>",
+      content: "Let's talk!\n\n<a href=\"mailto:brianabadguadalupe@gmail.com\" class=\"underline hover:text-blue-500\">brianabadguadalupe@gmail.com</a>",
       initiallyOpen: false
     }
   ];
