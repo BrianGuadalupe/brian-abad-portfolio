@@ -160,6 +160,8 @@ const App = () => {
           </div>
         </div>
       </div>
+      <Analytics />
+      <SpeedInsights />
     </div>
   );
 };
