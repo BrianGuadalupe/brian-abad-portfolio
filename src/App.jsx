@@ -20,28 +20,34 @@ const App = () => {
     }
   }, [darkMode]);
 
-  // Brian's CV data
+  // Brian’s CV data
   const sections = [
     {
-      id: 'about',
-      title: 'About',
-      content: "I’m Brian Abad, a product-driven builder focused on automation, AI, and efficient systems that reduce noise and scale clarity. I'm obsessed with removing friction — in sales, in operations, in life. \n\nMy background merges data, business, and code to design tools that work while you sleep. I spend most of my time prototyping SaaS products, integrating AI into real-world workflows, and thinking about how to automate myself out of every role I take on. \n\nI grew up in Spain, and my long-term goal is simple: build things that matter, live free, and bring others with me.",
+      id: ‘about’,
+      title: ‘About’,
+      content: "I’m Brian Abad — economist by training, builder by default. I design AI systems and automation workflows that reduce friction and scale operations.\n\nMy background merges economics, data, and code. I spend most of my time shipping AI products, integrating autonomous agents into real-world workflows, and thinking about how to automate myself out of every role I take on.\n\nI grew up in Spain. Long-term goal: build things that matter, live free, and bring others with me.",
       initiallyOpen: true
     },
     {
-      id: 'education',
-      title: 'Education',
-      content: `I studied Big Data and Machine Learning through a Master's program focused on real-world applications of large-scale data systems.\n\nMy work included building visual dashboards, building LLM-powered classifiers, scraping with Selenium, and creating AI workflows with tools like spaCy, Neo4j, Dask and Looker.\n\nBeyond the curriculum, I've turned coursework into shipped prototypes and early-stage products tested by real customers (such as <a href="https://www.opobots.com/" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-500">opobot</a>).`,
+      id: ‘education’,
+      title: ‘Education’,
+      content: `I studied Big Data and Machine Learning through a Master’s program focused on real-world applications of large-scale data systems.\n\nMy work included building visual dashboards, building LLM-powered classifiers, scraping with Selenium, and creating AI workflows with tools like spaCy, Neo4j, Dask and Looker.\n\nBeyond the curriculum, I’ve turned coursework into shipped prototypes and early-stage products tested by real customers (such as <a href="https://www.opobots.com/" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-500">opobot</a>).`,
       initiallyOpen: false
     },
     {
-      id: 'experience',
-      title: 'Experiencie',
-      content: "I’ve built and deployed AI systems that replace entire sales and support workflows.\n\nFrom voice agents that handle inbound calls and qualify leads, to AI chatbots that close appointments on WhatsApp — my work lives in production and talks to real users daily.\n\nIn real estate, I automated everything from cold outbound (email, LinkedIn, WhatsApp) to post-lead qualification, integrating LLMs with CRMs and Google Calendar. These agents handle inquiries, answer objections, and route qualified leads directly to human closers — saving teams hours every day.",
+      id: ‘experience’,
+      title: ‘Experience’,
+      content: "I currently drive AI adoption strategy at an international footwear brand — operating as an internal change agent bridging technical execution and C-level stakeholders.\n\nMy work spans three layers: strategic (executive benchmarks, competitive analysis against global retail leaders, building the case for AI as infrastructure — not a side project), systems (designing a multi-agent development pipeline with five specialized AI agents running on GCP), and product (agentic commerce readiness, structured data in production, and a recommendation engine built with Vertex AI image embeddings and BigQuery for a sister brand).\n\nPreviously, I built and deployed AI systems for sales automation: voice agents handling inbound calls and lead qualification, WhatsApp chatbots closing appointments, and end-to-end outbound pipelines integrating LLMs with CRMs and Google Calendar.\n\nThe through-line: I don’t just build tools — I build the conditions for AI to compound over time.",
       initiallyOpen: false
     },
     {
-      id: 'skills',
+      id: ‘projects’,
+      title: ‘Projects’,
+      content: `<b>Opobot</b> — AI-powered exam preparation platform. Shipped to real paying customers. → <a href="https://www.opobots.com/" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-500">opobots.com</a>\n\n<b>Recommendation Engine</b> — PDP similarity engine for a trail running brand. Built with Vertex AI image embeddings, BigQuery, and Cloud Functions on GCP.\n\n<b>pdf-all-in-one</b> — Open-source PDF processing toolkit. → <a href="https://github.com/BrianGuadalupe/pdf-all-in-one" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-500">github.com/BrianGuadalupe/pdf-all-in-one</a>\n\n<b>Real Estate Automation</b> — End-to-end lead pipeline: cold outbound (email, LinkedIn, WhatsApp) → LLM qualification → CRM + Google Calendar integration.`,
+      initiallyOpen: false
+    },
+    {
+      id: ‘skills’,
       title: 'Skills',
       content: "Design and deployment of AI-powered automations across sales, support, and onboarding, including WhatsApp-driven lead qualification and calendar booking.\n\nLLM Agent Design: creation of prompts and toolchains with Retell AI, GPT-4, n8n, and Python.\n\nAPI & CRM Integration: WhatsApp Cloud API, Apps Script, Stripe, Supabase, n8n Orchestration.\n\nData-Driven Operations: scraping, data processing, and dashboarding with Python, Pandas, Looker Studio, PostgreSQL, and Neo4j.",
       initiallyOpen: false
@@ -55,7 +61,7 @@ const App = () => {
     {
       id: 'contact',
       title: 'Contact',
-      content: "If you’d like to get in touch, you can reach me at brianabadguadalupe@gmail.com.",
+      content: `If you’re building something in AI automation and want to move fast — or thinking about how to bring AI into your organization for real — let’s talk.\n\n<a href="mailto:brianabadguadalupe@gmail.com" class="underline hover:text-blue-500">brianabadguadalupe@gmail.com</a>`,
       initiallyOpen: false
     }
   ];
@@ -102,7 +108,7 @@ const App = () => {
 
           {/* Subtitle */}
           <p className={`mb-10 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-            Data Analyst & AI Automation
+            AI Systems Builder
           </p>
 
           {/* Sections */}
